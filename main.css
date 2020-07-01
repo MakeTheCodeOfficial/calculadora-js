@@ -1,0 +1,57 @@
+#calc input, #calc button{
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#calc{
+	padding: 10px;
+	border: 1px black solid;
+	width: 800px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1{
+	text-align: center;
+}
+
+p{
+	font-size: 30px;
+}
+
+#demo{
+	padding: 10px;
+	border: 1px black solid;
+	width: 800px;
+}
+
+#result{
+	width: 500px;
+	height: 40px;
+	text-align: center;
+}
+
+button {
+	padding: 5px;
+	min-width: 75px;
+	color: #fff;
+	font-weight: bold;
+	border: 2px rgba(0,0,0,0.35) solid;
+	background: #4180FF;
+}
+
+button:hover {
+	padding: 5px;
+	min-width: 75px;
+	color: #fff;
+	font-weight: bold;
+	border: 2px rgba(0,0,0,0.35) solid;
+	background: #41C3FF;
+}
