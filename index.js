@@ -18,7 +18,11 @@ function plus() {
 	var dos = document.getElementById('n2');
 	var total;
 	total = parseInt(uno.value) + parseInt(dos.value);
-	document.getElementById("result").value = total;
+	if (isNaN(total)){
+		document.getElementById("result").value = 'Operación no válida.'
+	}else {
+		document.getElementById("result").value = total;
+	}
 }
 
 function less() {
@@ -26,7 +30,11 @@ function less() {
 	var dos = document.getElementById('n2');
 	var total;
 	total = parseInt(uno.value) - parseInt(dos.value);
-	document.getElementById("result").value = total;
+	if (isNaN(total)){
+		document.getElementById("result").value = 'Operación no válida.'
+	}else {
+		document.getElementById("result").value = total;
+	}
 }
 
 function mult() {
@@ -34,7 +42,11 @@ function mult() {
 	var dos = document.getElementById('n2');
 	var total;
 	total = parseInt(uno.value) * parseInt(dos.value);
-	document.getElementById("result").value = total;
+	if (isNaN(total)){
+		document.getElementById("result").value = 'Operación no válida.'
+	}else {
+		document.getElementById("result").value = total;
+	}
 }
 
 function split() {
@@ -43,11 +55,10 @@ function split() {
 	total = parseInt(uno.value) / parseInt(dos.value);
 	if (total == Infinity){
 		document.getElementById("result").value = 'No se puede operar con cero.';
+	}
+	else if (isNaN(total)){
+		document.getElementById("result").value = 'Operación no válida.'
 	} else {
-		var uno = document.getElementById('n1');
-		var dos = document.getElementById('n2');
-		var total;
-		total = parseInt(uno.value) / parseInt(dos.value);
 		document.getElementById("result").value = total;
 	}
 }
